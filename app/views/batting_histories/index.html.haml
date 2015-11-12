@@ -1,0 +1,25 @@
+%h1 Listing batting_histories
+
+%table
+  %thead
+    %tr
+      %th Date
+      %th At bats
+      %th Hits
+      %th
+      %th
+      %th
+
+  %tbody
+    - @batting_histories.each do |batting_history|
+      %tr
+        %td= batting_history.date
+        %td= batting_history.at_bats
+        %td= batting_history.hits
+        %td= link_to 'Show', batting_history
+        %td= link_to 'Edit', edit_batting_history_path(batting_history)
+        %td= link_to 'Destroy', batting_history, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Batting history', new_batting_history_path

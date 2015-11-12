@@ -11,6 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151112050826) do
+
+  create_table "batting_histories", force: :cascade do |t|
+    t.date     "date"
+    t.integer  "at_bats",    limit: 4
+    t.integer  "hits",       limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
 
 end

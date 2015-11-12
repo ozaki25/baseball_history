@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Date:
+  = @batting_history.date
+%p
+  %b At bats:
+  = @batting_history.at_bats
+%p
+  %b Hits:
+  = @batting_history.hits
+
+= link_to 'Edit', edit_batting_history_path(@batting_history)
+\|
+= link_to 'Back', batting_histories_path
