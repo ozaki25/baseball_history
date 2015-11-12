@@ -4,7 +4,7 @@ ruby '2.2.1'
 
 gem 'rails', '4.2.1'
 #gem 'pg'
-gem 'mysql2'
+gem 'mysql2', '~> 0.3.20'
 gem 'puma'
 
 #--------------------------------------------------------------------------------
@@ -19,34 +19,35 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'haml-rails'
 gem 'bootstrap-sass', '>= 3.0.0.0'
-gem 'bootstrap-datepicker-rails'
+# gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-rails'
 gem 'compass-rails'
 gem 'zurui-sass-rails'
 gem 'roboto'
-gem 'react-rails', '~> 1.0'
+# gem 'react-rails', '~> 1.0'
 gem 'jquery-turbolinks'
 gem 'lodash-rails'
+gem 'rails-backbone'
 
 #--------------------------------------------------------------------------------
 # View Helpers
 #--------------------------------------------------------------------------------
 # gem 'kaminari'
 # gem 'nprogress-rails'
-gem 'simple_form'
+# gem 'simple_form'
 
 #--------------------------------------------------------------------------------
 # Active Record
 #--------------------------------------------------------------------------------
-gem 'devise'
-gem 'devise-bootstrap-views'
-gem 'devise-i18n'
-gem 'devise-i18n-views'
+# gem 'devise'
+# gem 'devise-bootstrap-views'
+# gem 'devise-i18n'
+# gem 'devise-i18n-views'
 # gem 'default_value_for', git: 'git://github.com/tsmango/default_value_for.git'
 # gem 'squeel'
 # gem 'acts_as_list'
-gem 'enumerize'
-gem 'active_attr'
+# gem 'enumerize'
+# gem 'active_attr'
 
 #--------------------------------------------------------------------------------
 # Operation
