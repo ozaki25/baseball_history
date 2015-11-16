@@ -1,7 +1,7 @@
 class BaseballHistory.Routers.BattingHistoriesRouter extends Backbone.Router
   initialize: (options) ->
-    @battingHistories = new BaseballHistory.Collections.BattingHistoriesCollection()
-    @battingHistories.reset options.battingHistories
+    @batting_histories = new BaseballHistory.Collections.BattingHistoriesCollection()
+    @batting_histories.reset options.battingHistories
 
   routes:
     "new"      : "newBattingHistory"

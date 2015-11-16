@@ -9,6 +9,7 @@ window.BaseballHistory =
   Collections: {}
   Routers: {}
   Views: {}
-  initialize: ->
-    window.router = new BaseballHistory.Routers.BattingHistoriesRouter()
+  initialize: (battingHistories) ->
+    window.router = new BaseballHistory.Routers.BattingHistoriesRouter({battingHistories: battingHistories})
     Backbone.history.start(pushState: true)
+
