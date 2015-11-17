@@ -8,7 +8,8 @@
     = csrf_meta_tags
     :javascript
       $(function() {
-        BaseballHistory.initialize(#{@batting_histories.to_json});
+        window.router = new BaseballHistory.Routers.BattingHistoriesRouter({batting_histories: #{@batting_histories.to_json.html_safe}});
+        Backbone.history.start();
       });
   %body
     #batting_histories

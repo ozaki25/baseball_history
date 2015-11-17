@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151112050826) do
+ActiveRecord::Schema.define(version: 20151117223701) do
 
   create_table "batting_histories", force: :cascade do |t|
     t.date     "date"
