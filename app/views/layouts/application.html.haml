@@ -6,5 +6,10 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    :javascript
+      $(function() {
+        window.router = new BaseballHistory.Routers.BattingHistoriesRouter({batting_histories: #{@batting_histories.to_json.html_safe}});
+        Backbone.history.start();
+      });
   %body
     #batting_histories
