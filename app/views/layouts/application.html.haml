@@ -12,4 +12,14 @@
         Backbone.history.start();
       });
   %body
-    #batting_histories
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header
+          %button.navbar-toggle{ data: {target: '.navbar-collapse', toggle: 'collapse'}, type: 'button' }
+            %span.icon-bar
+            %span.icon-bar
+            %span.icon-bar
+          = link_to '#', class: 'navbar-brand' do
+            Baseball History
+    .container
+      #batting_histories

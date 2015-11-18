@@ -2,9 +2,9 @@ class BaseballHistory.Models.BattingHistory extends Backbone.Model
   paramRoot: 'batting_history'
 
   defaults:
-    date: null
-    at_bats: null
-    hits: null
+    date: new Date()
+    at_bats: 0
+    hits: 0
 
 class BaseballHistory.Collections.BattingHistoriesCollection extends Backbone.Collection
   model: BaseballHistory.Models.BattingHistory
