@@ -1,25 +1,29 @@
-<h1>New batting_history</h1>
+<h3>打撃成績の登録</h3>
 
-<form id="new-batting_history" name="batting_history">
-  <div class="field">
-    <label for="date"> date:</label>
-    <input type="text" name="date" id="date" value="<%= date %>" >
+<form id="new-batting_history" name="batting_history" class="form-horizontal">
+  <div class="form-group">
+    <label for="date" class="col-sm-2 control-label">試合日</label>
+    <div class="col-sm-10">
+      <input type="text" name="date" id="date" class="form-control" value="<%= date %>">
+    </div>
   </div>
-
-  <div class="field">
-    <label for="at_bats"> at_bats:</label>
-    <input type="text" name="at_bats" id="at_bats" value="<%= at_bats %>" >
+  <div class="form-group">
+    <label for="at_bats" class="col-sm-2 control-label">打数</label>
+    <div class="col-sm-10">
+      <input type="text" name="at_bats" id="at_bats" class="form-control" value="<%= at_bats %>">
+    </div>
   </div>
-
-  <div class="field">
-    <label for="hits"> hits:</label>
-    <input type="text" name="hits" id="hits" value="<%= hits %>" >
+  <div class="form-group">
+    <label for="hits" class="col-sm-2 control-label">安打</label>
+    <div class="col-sm-10">
+      <input type="text" name="hits" id="hits" class="form-control" value="<%= hits %>">
+    </div>
   </div>
-
-  <div class="actions">
-    <input type="submit" value="Create Batting history" />
+  <div class="form-group actions">
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" class="btn btn-default" value="登録">
+    </div>
   </div>
-
 </form>
 
-<a href="#/index">Back</a>
+<a href="#/index" class="btn btn-link">戻る</a>
