@@ -15,12 +15,17 @@ ActiveRecord::Schema.define(version: 20151201025758) do
 
   create_table "batting_histories", force: :cascade do |t|
     t.date     "date"
-    t.integer  "at_bats",        limit: 4
-    t.integer  "hits",           limit: 4
-    t.datetime "created_at",               null: false
-    t.datetime "updated_at",               null: false
-    t.integer  "runs_batted_in", limit: 4
-    t.integer  "stolen_bases",   limit: 4
+    t.integer  "at_bats",          limit: 4
+    t.integer  "hits",             limit: 4
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "opponent",         limit: 255
+    t.integer  "plat_appearances", limit: 4
+    t.integer  "runs_batted_in",   limit: 4
+    t.integer  "stolen_bases",     limit: 4
+    t.integer  "runs",             limit: 4
+    t.integer  "strikeouts",       limit: 4
+    t.integer  "walks",            limit: 4
   end
 
 end
