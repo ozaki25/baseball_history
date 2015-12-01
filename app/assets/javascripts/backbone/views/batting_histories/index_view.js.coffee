@@ -4,7 +4,9 @@ class BaseballHistory.Views.BattingHistories.IndexView extends Backbone.View
   template: JST["backbone/templates/batting_histories/index"]
 
   initialize: () ->
-    @collection.bind('reset', @addAll)
+    @collection = new BaseballHistory.Collections.BattingHistoriesCollection()
+    @collection.fetch()
+    @listenTo(@collection, 'sync', @render);
 
   addAll: () =>
     @collection.each(@addOne)
