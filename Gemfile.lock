@@ -56,6 +56,8 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap-datepicker-rails (1.4.0)
+      railties (>= 3.0)
     bootstrap-sass (3.3.5)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.2.19)
@@ -155,6 +157,8 @@ GEM
     mime-types (2.6.2)
     mini_portile (0.6.2)
     minitest (5.8.2)
+    momentjs-rails (2.9.0)
+      railties (>= 3.1)
     multi_json (1.11.2)
     mysql2 (0.3.20)
     net-http-digest_auth (1.4)
@@ -273,6 +277,7 @@ PLATFORMS
 DEPENDENCIES
   better_errors
   binding_of_caller
+  bootstrap-datepicker-rails
   bootstrap-sass (>= 3.0.0.0)
   bugsnag
   byebug
@@ -290,6 +295,7 @@ DEPENDENCIES
   jquery-turbolinks
   letter_opener
   lodash-rails
+  momentjs-rails
   mysql2 (~> 0.3.20)
   newrelic_rpm
   puma

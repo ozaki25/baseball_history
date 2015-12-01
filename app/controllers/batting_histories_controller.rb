@@ -69,6 +69,6 @@ class BattingHistoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def batting_history_params
-      params.require(:batting_history).permit(:date, :at_bats, :hits)
+      params.require(:batting_history).permit(:date, :at_bats, :hits, :runs_batted_in, :stolen_bases)
     end
 end

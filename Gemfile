@@ -19,7 +19,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'haml-rails'
 gem 'bootstrap-sass', '>= 3.0.0.0'
-# gem 'bootstrap-datepicker-rails'
+gem 'bootstrap-datepicker-rails'
 gem 'font-awesome-rails'
 gem 'compass-rails'
 gem 'zurui-sass-rails'
@@ -28,6 +28,7 @@ gem 'roboto'
 gem 'jquery-turbolinks'
 gem 'lodash-rails'
 gem 'rails-backbone'
+gem 'momentjs-rails'
 
 #--------------------------------------------------------------------------------
 # View Helpers

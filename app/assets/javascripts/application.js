@@ -15,8 +15,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require lodash
+//= require moment
+//= require moment/ja.js
 //= require backbone
 //= require backbone_rails_sync
 //= require backbone_datalink
 //= require backbone/baseball_history
-//= require_tree .
+//= require bootstrap-datepicker/core
+//= require bootstrap-datepicker/locales/bootstrap-datepicker.ja.js
+//= require app
+
