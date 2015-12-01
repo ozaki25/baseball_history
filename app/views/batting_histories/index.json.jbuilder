@@ -1,4 +1,4 @@
 json.array!(@batting_histories) do |batting_history|
-  json.extract! batting_history, :id, :date, :at_bats, :hits
+  json.extract! batting_history, :id, :date, :at_bats, :hits, :runs_batted_in, :stolen_bases
   json.url batting_history_url(batting_history, format: :json)
 end
